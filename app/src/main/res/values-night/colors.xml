@@ -1,0 +1,9 @@
+<resources>
+    <color name="corDestaque">#FF80AB</color>
+    <color name="corDestaqueDark">#AD1457</color>
+    <color name="fundoPrincipal">#121212</color>
+    <color name="fundoCartao">#1E1E1E</color>
+    <color name="textPrincipal">#FAFAFA</color>
+    <color name="textSecundario">#B0BEC5</color>
+    <color name="linhaDivisoria">#FF6E40</color>
+</resources>
