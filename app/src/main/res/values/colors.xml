@@ -1,9 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="corDestaque">#FF4081</color>
-    <color name="corDestaqueDark">#C2185B</color>
-    <color name="fundoPrincipal">#FFFFFF</color>
-    <color name="fundoCartao">#FFF3E0</color>
-    <color name="textPrincipal">#263238</color>
-    <color name="textSecundario">#546E7A</color>
-    <color name="linhaDivisoria">#FFAB40</color>
+    <color name="fundoPrincipal">#F8F9FA</color>
+    <color name="textPrincipal">#212121</color>
+    <color name="textSecundario">#757575</color>
+    <color name="corDestaque">#2196F3</color>
+    <color name="corDestaqueDark">#1976D2</color>
 </resources>

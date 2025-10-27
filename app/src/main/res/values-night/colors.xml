@@ -1,9 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="corDestaque">#FF80AB</color>
-    <color name="corDestaqueDark">#AD1457</color>
-    <color name="fundoPrincipal">#121212</color>
-    <color name="fundoCartao">#1E1E1E</color>
-    <color name="textPrincipal">#FAFAFA</color>
-    <color name="textSecundario">#B0BEC5</color>
-    <color name="linhaDivisoria">#FF6E40</color>
+    <color name="fundoPrincipal">#121212</color> <!-- Cor de fundo escuro -->
+    <color name="textPrincipal">#E0E0E0</color> <!-- Texto claro -->
+    <color name="textSecundario">#B0B0B0</color> <!-- Texto secundário mais suave -->
+    <color name="corDestaque">#64B5F6</color> <!-- Cor de destaque suave -->
+    <color name="corDestaqueDark">#1E88E5</color> <!-- Cor de destaque escura -->
 </resources>

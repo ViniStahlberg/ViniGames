@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vini Games</string>
+
+    <string name="main_title">Vini Games</string>
+    <string name="catalog_title">Games Catalog</string>
+
+    <string name="detail_title">Game Details</string>
+    <string name="developer">Developer</string>
+    <string name="genre">Genre</string>
+    <string name="description">Description</string>
+    <string name="open_steam">Open on Steam</string>
+    <string name="open_wikipedia">Open on Wikipedia</string>
+
+    <string name="cs2_description">Valve\'s classic team-based shooter game, with updated graphics and improved mechanics.</string>
+    <string name="r6_description">Tactical FPS focused on teamwork and environmental destruction in intense combat.</string>
+    <string name="fortnite_description">Online survival game with building and cartoonish style, global success across all ages.</string>
+    <string name="valorant_description">Competitive FPS that mixes strategy, unique abilities and precise gameplay.</string>
+    <string name="rocket_league_description">Dynamic game that combines soccer with rocket-powered cars, perfect for quick matches.</string>
+    <string name="minecraft_description">A block universe where creativity and exploration are infinite possibilities for the player.</string>
+
+    <string name="name_not_available">Name not available</string>
+    <string name="developer_not_available">Developer not informed</string>
+    <string name="genre_not_available">Genre not informed</string>
+    <string name="description_not_available">Description not available</string>
+    <string name="url_not_available">URL not available</string>
+    <string name="steam_link_not_available">Steam link not available</string>
+    <string name="wikipedia_link_not_available">Wikipedia link not available</string>
+</resources>

@@ -1,59 +1,97 @@
 package com.example.vilaxavier.ui
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
+import android.widget.AdapterView
+import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.vilaxavier.R
-import com.example.vilaxavier.databinding.ActivityMainBinding
-import com.example.vilaxavier.model.Jogo
 import com.example.vilaxavier.adapter.JogoAdapter
-import android.content.Intent
-import com.seuapp.jogos.DetalheActivity
+import com.example.vilaxavier.model.Jogo
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-    private lateinit var jogos: List<Jogo>
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        loadData()
-        setupViews()
-        setupListeners()
+        supportActionBar?.hide()
+        setupApp()
     }
 
-    private fun loadData() {
-        jogos = listOf(
-            Jogo(R.drawable.cs2, "Valve", "Counter-Strike 2", "Tiro Tático", "O clássico jogo de tiro em equipe da Valve, com gráficos renovados e mecânicas aprimoradas."),
-            Jogo(R.drawable.r6, "Ubisoft", "Rainbow Six Siege", "Tiro Estratégico", "FPS tático focado em trabalho em equipe e destruição de ambientes em combates intensos."),
-            Jogo(R.drawable.fortnite, "Epic Games", "Fortnite", "Battle Royale", "Jogo online de sobrevivência com construção e estilo cartunesco, sucesso global entre todas as idades."),
-            Jogo(R.drawable.valorant, "Riot Games", "Valorant", "Tiro Tático", "FPS competitivo que mistura estratégia, habilidades únicas e jogabilidade precisa."),
-            Jogo(R.drawable.rocketleague, "Psyonix", "Rocket League", "Esporte/Futebol com Carros", "Jogo dinâmico que combina futebol com carros movidos a foguete, perfeito para partidas rápidas."),
-            Jogo(R.drawable.minecraft, "Mojang Studios", "Minecraft", "Sandbox/Aventura", "Um universo de blocos onde criatividade e exploração são infinitas possibilidades para o jogador.")
+    private fun setupApp() {
+        val jogos = listOf(
+            Jogo(
+                R.drawable.cs2,
+                "Valve",
+                "Counter-Strike 2",
+                "Tiro Tático", // Este é o gênero que será mostrado
+                "O clássico jogo de tiro em equipe da Valve, com gráficos renovados e mecânicas aprimoradas.",
+                "https://store.steampowered.com/app/730/",
+                "https://en.wikipedia.org/wiki/Counter-Strike_2"
+            ),
+            Jogo(
+                R.drawable.r6,
+                "Ubisoft",
+                "Rainbow Six Siege",
+                "Tiro Estratégico",
+                "FPS tático focado em trabalho em equipe e destruição de ambientes em combates intensos.",
+                "https://store.steampowered.com/app/359550/",
+                "https://en.wikipedia.org/wiki/Tom_Clancy%27s_Rainbow_Six_Siege"
+            ),
+            Jogo(
+                R.drawable.fortnite,
+                "Epic Games",
+                "Fortnite",
+                "Battle Royale",
+                "Jogo online de sobrevivência com construção e estilo cartunesco, sucesso global entre todas as idades.",
+                "https://www.epicgames.com/fortnite",
+                "https://en.wikipedia.org/wiki/Fortnite"
+            ),
+            Jogo(
+                R.drawable.valorant,
+                "Riot Games",
+                "Valorant",
+                "Tiro Tático",
+                "FPS competitivo que mistura estratégia, habilidades únicas e jogabilidade precisa.",
+                "https://playvalorant.com/",
+                "https://en.wikipedia.org/wiki/Valorant"
+            ),
+            Jogo(
+                R.drawable.rocketleague,
+                "Psyonix",
+                "Rocket League",
+                "Esporte",
+                "Jogo dinâmico que combina futebol com carros movidos a foguete, perfeito para partidas rápidas.",
+                "https://store.steampowered.com/app/252950/",
+                "https://en.wikipedia.org/wiki/Rocket_League"
+            ),
+            Jogo(
+                R.drawable.minecraft,
+                "Mojang Studios",
+                "Minecraft",
+                "Sandbox",
+                "Um universo de blocos onde criatividade e exploração são infinitas possibilidades para o jogador.",
+                "https://www.minecraft.net/",
+                "https://en.wikipedia.org/wiki/Minecraft"
+            )
         ).sortedBy { it.nome }
-    }
 
-    private fun setupViews() {
-        val adapter = JogoAdapter(this, jogos)
-        binding.listViewMusicas.adapter = adapter
-    }
+        val listView = findViewById<ListView>(R.id.listViewJogos)
+        listView.adapter = JogoAdapter(this, jogos)
 
-    private fun setupListeners() {
-        binding.listViewMusicas.setOnItemClickListener { _, _, position, _ ->
+        listView.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             val jogo = jogos[position]
-            val intent = Intent(this, DetalheActivity::class.java).apply {
+            Intent(this, DetalheActivity::class.java).apply {
                 putExtra("imagem", jogo.foto)
                 putExtra("nome", jogo.nome)
                 putExtra("desenvolvedora", jogo.desenvolvedora)
                 putExtra("genero", jogo.genero)
                 putExtra("descricao", jogo.descricao)
-                putExtra("steamUrl", "https://store.steampowered.com/app/730") // Exemplo CS2
-                putExtra("wikiUrl", "https://pt.wikipedia.org/wiki/Counter-Strike_2")
+                putExtra("steamUrl", jogo.steamUrl)
+                putExtra("wikiUrl", jogo.wikipediaUrl)
+                startActivity(this)
             }
-            startActivity(intent)
         }
     }
 }

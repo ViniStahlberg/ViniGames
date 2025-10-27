@@ -3,10 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:background="@color/fundoPrincipal"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/corDestaque"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp" />
 
     <ListView
-        android:id="@+id/listViewMusicas"
+        android:id="@+id/listViewJogos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="12dp"
+        android:padding="4dp" />
+
 </LinearLayout>

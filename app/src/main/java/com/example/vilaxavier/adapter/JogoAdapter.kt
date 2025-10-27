@@ -1,41 +1,36 @@
 package com.example.vilaxavier.adapter
 
-
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import com.example.vilaxavier.databinding.ItemServicoBinding
+import android.widget.ImageView
+import android.widget.TextView
+import com.example.vilaxavier.R
 import com.example.vilaxavier.model.Jogo
 
-class JogoAdapter (
+class JogoAdapter(
     context: Context,
-    private val lista: List<Jogo>
-    ) : ArrayAdapter<Jogo>(context, 0, lista) {
+    private val jogos: List<Jogo>
+) : ArrayAdapter<Jogo>(context, 0, jogos) {
 
-        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-            val binding: ItemServicoBinding
-            val itemView: View
+    override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+        val view = convertView ?: LayoutInflater.from(context)
+            .inflate(R.layout.item_jogo, parent, false)
 
-            if (convertView == null) {
-                binding = ItemServicoBinding.inflate(LayoutInflater.from(context), parent, false)
-                itemView = binding.root
-                itemView.tag = binding
-            } else {
-                itemView = convertView
-                binding = itemView.tag as ItemServicoBinding
-            }
+        val jogo = jogos[position]
 
-            val jogo = lista[position]
+        val imgCapa = view.findViewById<ImageView>(R.id.imgCapa)
+        val tvNome = view.findViewById<TextView>(R.id.tvNome)
+        val tvDesenvolvedora = view.findViewById<TextView>(R.id.tvDesenvolvedora)
+        val tvGenero = view.findViewById<TextView>(R.id.tvGenero)
 
-            binding.tvNome.text = jogo.nome
-            binding.tvDesenvolvedora.text = jogo.desenvolvedora
-            binding.tvGenero.text = jogo.genero
-            binding.tvDescricao.text = jogo.descricao
-            binding.imgFoto.setImageResource(jogo.foto)
+        imgCapa.setImageResource(jogo.foto)
+        tvNome.text = jogo.nome
+        tvDesenvolvedora.text = jogo.desenvolvedora
+        tvGenero.text = jogo.genero
 
-
-            return itemView
-        }
+        return view
+    }
 }

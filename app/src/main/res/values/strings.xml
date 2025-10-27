@@ -1,3 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">VilaXavier</string>
+    <string name="app_name">Vini Jogos</string>
+
+    <string name="main_title">Vini Jogos</string>
+    <string name="catalog_title">Catálogo de Jogos</string>
+
+    <string name="detail_title">Detalhes do Jogo</string>
+    <string name="developer">Desenvolvedora</string>
+    <string name="genre">Gênero</string>
+    <string name="description">Descrição</string>
+    <string name="open_steam">Abrir na Steam</string>
+    <string name="open_wikipedia">Abrir na Wikipedia</string>
+
+    <string name="cs2_description">O clássico jogo de tiro em equipe da Valve, com gráficos renovados e mecânicas aprimoradas.</string>
+    <string name="r6_description">FPS tático focado em trabalho em equipe e destruição de ambientes em combates intensos.</string>
+    <string name="fortnite_description">Jogo online de sobrevivência com construção e estilo cartunesco, sucesso global entre todas as idades.</string>
+    <string name="valorant_description">FPS competitivo que mistura estratégia, habilidades únicas e jogabilidade precisa.</string>
+    <string name="rocket_league_description">Jogo dinâmico que combina futebol com carros movidos a foguete, perfeito para partidas rápidas.</string>
+    <string name="minecraft_description">Um universo de blocos onde criatividade e exploração são infinitas possibilidades para o jogador.</string>
+
+    <string name="name_not_available">Nome não disponível</string>
+    <string name="developer_not_available">Desenvolvedora não informada</string>
+    <string name="genre_not_available">Gênero não informado</string>
+    <string name="description_not_available">Descrição não disponível</string>
+    <string name="url_not_available">URL não disponível</string>
+    <string name="steam_link_not_available">Link Steam não disponível</string>
+    <string name="wikipedia_link_not_available">Link Wikipedia não disponível</string>
 </resources>

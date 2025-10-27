@@ -1,9 +1,11 @@
 package com.example.vilaxavier.model
 
-data class Jogo (
+data class Jogo(
     val foto: Int,
-    val genero: String,
-    val nome: String,
     val desenvolvedora: String,
-    val descricao: String
+    val nome: String,
+    val genero: String,
+    val descricao: String,
+    val steamUrl: String = "",
+    val wikipediaUrl: String = ""
 )
