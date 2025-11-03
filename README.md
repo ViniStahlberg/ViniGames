@@ -8,13 +8,13 @@ O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários tít
 - botões para ir direto para a steam ou wikipedia
 ## Capturas de Tela
 <div align="center">
-  <img src="app/imagens/fto1.png" width="300" style="border-radius:20px; margin:10px;">
-  <img src="app/imagens/fto2.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto1.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto2.png" width="300" style="border-radius:20px; margin:10px;">
 </div>
 <br><br>
 <div align="center">
-  <img src="app/imagens/fto4.png" width="300" style="border-radius:20px; margin:10px;">
-  <img src="app/imagens/fto3.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto3.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto4.png" width="300" style="border-radius:20px; margin:10px;">
 </div>
 <br>
 ## Demonstração
