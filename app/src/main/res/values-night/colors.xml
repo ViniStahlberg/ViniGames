@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="fundoPrincipal">#121212</color> <!-- Cor de fundo escuro -->
-    <color name="textPrincipal">#E0E0E0</color> <!-- Texto claro -->
-    <color name="textSecundario">#B0B0B0</color> <!-- Texto secundário mais suave -->
-    <color name="corDestaque">#64B5F6</color> <!-- Cor de destaque suave -->
-    <color name="corDestaqueDark">#1E88E5</color> <!-- Cor de destaque escura -->
+    <color name="fundoPrincipal">#121212</color>
+    <color name="textPrincipal">#E0E0E0</color>
+    <color name="textSecundario">#B0B0B0</color>
+    <color name="corDestaque">#64B5F6</color>
+    <color name="corDestaqueDark">#1E88E5</color>
 </resources>

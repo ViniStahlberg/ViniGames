@@ -26,4 +26,15 @@
     <string name="url_not_available">URL not available</string>
     <string name="steam_link_not_available">Steam link not available</string>
     <string name="wikipedia_link_not_available">Wikipedia link not available</string>
+
+    <string name="change_theme">Change Theme</string>
+    <string name="change_language">Change Language</string>
+    <string name="theme_dark">Dark Theme</string>
+    <string name="theme_light">Light Theme</string>
+    <string name="language_portuguese">Portuguese</string>
+    <string name="language_english">English</string>
+    
+    <string name="genre_tactical_shooter_en">Tactical Shooter</string>
+    <string name="genre_strategic_shooter_en">Strategic Shooter</string>
+    <string name="genre_sports_en">Sports</string>
 </resources>

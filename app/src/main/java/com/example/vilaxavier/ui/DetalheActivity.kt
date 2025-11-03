@@ -12,12 +12,21 @@ import com.example.vilaxavier.R
 
 class DetalheActivity : AppCompatActivity() {
 
+    private lateinit var prefs: android.content.SharedPreferences
+    private var isPortuguese = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        prefs = getSharedPreferences("app_prefs", MODE_PRIVATE)
+        isPortuguese = prefs.getBoolean("is_portuguese", true)
+
         setContentView(R.layout.activity_detalhe)
-
         supportActionBar?.hide()
+        setupViews()
+    }
 
+    private fun setupViews() {
         val imgCapa = findViewById<ImageView>(R.id.imgCapaDetalhe)
         val tvNome = findViewById<TextView>(R.id.tvNomeDetalhe)
         val tvDesenvolvedora = findViewById<TextView>(R.id.tvDesenvolvedoraDetalhe)
@@ -42,31 +51,61 @@ class DetalheActivity : AppCompatActivity() {
         tvDesenvolvedora.text = desenvolvedora
         tvGenero.text = genero
         tvDescricao.text = descricao
+        updateButtonTexts()
+
+        setupButtonListeners(steamUrl, wikipediaUrl)
+    }
+
+    private fun updateButtonTexts() {
+        val btnSteam = findViewById<Button>(R.id.btnSteam)
+        val btnWikipedia = findViewById<Button>(R.id.btnWikipedia)
+
+        findViewById<TextView>(R.id.tvDesenvolvedoraLabel)?.text = getString(R.string.developer)
+        findViewById<TextView>(R.id.tvGeneroLabel)?.text = getString(R.string.genre)
+        findViewById<TextView>(R.id.tvDescricaoLabel)?.text = getString(R.string.description)
+
+        btnSteam.text = getString(R.string.open_steam)
+        btnWikipedia.text = getString(R.string.open_wikipedia)
+    }
+
+    private fun setupButtonListeners(steamUrl: String?, wikipediaUrl: String?) {
+        val btnSteam = findViewById<Button>(R.id.btnSteam)
+        val btnWikipedia = findViewById<Button>(R.id.btnWikipedia)
 
         btnSteam.setOnClickListener {
-            steamUrl?.let { url ->
-                if (url.isNotEmpty()) {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            if (!steamUrl.isNullOrEmpty() && steamUrl != "null") {
+                try {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(steamUrl))
                     startActivity(intent)
-                } else {
+                } catch (e: Exception) {
                     Toast.makeText(this, getString(R.string.url_not_available), Toast.LENGTH_SHORT).show()
                 }
-            } ?: run {
+            } else {
                 Toast.makeText(this, getString(R.string.steam_link_not_available), Toast.LENGTH_SHORT).show()
             }
         }
 
         btnWikipedia.setOnClickListener {
-            wikipediaUrl?.let { url ->
-                if (url.isNotEmpty()) {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+            if (!wikipediaUrl.isNullOrEmpty() && wikipediaUrl != "null") {
+                try {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(wikipediaUrl))
                     startActivity(intent)
-                } else {
+                } catch (e: Exception) {
                     Toast.makeText(this, getString(R.string.url_not_available), Toast.LENGTH_SHORT).show()
                 }
-            } ?: run {
+            } else {
                 Toast.makeText(this, getString(R.string.wikipedia_link_not_available), Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val currentLanguage = prefs.getBoolean("is_portuguese", true)
+        if (currentLanguage != isPortuguese) {
+            recreate()
+        } else {
+            updateButtonTexts()
         }
     }
 }

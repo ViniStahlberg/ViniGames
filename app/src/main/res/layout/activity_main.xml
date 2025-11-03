@@ -18,6 +18,33 @@
         android:layout_marginBottom="8dp"
         android:elevation="4dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="@string/change_theme"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnLanguage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:text="@string/change_language"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
     <ListView
         android:id="@+id/listViewJogos"
         android:layout_width="match_parent"
