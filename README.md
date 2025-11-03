@@ -7,8 +7,7 @@ O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários tít
 - Tela de detalhes com Intents explícitas
 - botões para ir direto para a steam ou wikipedia
 ## Demonstração
-[![Assista no
-YouTube](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://youtu.be/dQw4w9WgXcQ)
+- [Assista no youtube](https://www.linkedin.com/in/vin%C3%ADcius-stahlberg-43a971218/)
 ## Tecnologias Utilizadas
 - Kotlin + Android Studio
 - ViewBinding
