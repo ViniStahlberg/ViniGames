@@ -1,5 +1,8 @@
 # 📱ViniGames - Aplicativo de Catálogo de Jogos
 > Projeto Android desenvolvido como parte do curso de Desenvolvimento Mobile no IFSP.
+
+---
+
 ## Descrição
 O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários títulos e clicar em cada um pra abrir os detalhes.
 ### Funcionalidades
@@ -17,17 +20,25 @@ O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários tít
   <img src="app/imagens/foto4.png" width="300" style="border-radius:20px; margin:10px;">
 </div>
 <br>
+
+---
 ## Demonstração
 - [Assista no Youtube](https://youtube.com/shorts/9E3qiy-PxCE?feature=share)
+
+---
 ## Tecnologias Utilizadas
 - Kotlin + Android Studio
 - ViewBinding
 - ListView e Intents
 - Temas
 - Internacionalização
+
+---
 ## Status
 ✔️ Concluído - protótipo funcional com lista de jogos eletrônicos, tela de detalhes e ações
 nativas do sistema.
+
+---
 ## Aprendizados e Desafios
 - Uso adequado do ciclo de vida das Activities
 - Troca de dados usando putExtra e Serializable
