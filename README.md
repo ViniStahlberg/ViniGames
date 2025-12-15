@@ -25,7 +25,7 @@ O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários tít
 
 ---
 ## Demonstração
-- [Assista no Youtube](https://youtube.com/shorts/9E3qiy-PxCE?feature=share)
+- [Assista no Youtube]([https://youtube.com/shorts/9E3qiy-PxCE?feature=share](https://youtube.com/shorts/bpw_od8d9QY?feature=share))
 
 ---
 ## Tecnologias Utilizadas
@@ -34,11 +34,12 @@ O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários tít
 - ListView e Intents
 - Temas
 - Internacionalização
+  
 
 ---
 ## Status
-✔️ Concluído - protótipo funcional com lista de jogos eletrônicos, tela de detalhes e ações
-nativas do sistema.
+✔️ Concluído - protótipo funcional com lista de jogos eletrônicos, tela de detalhes, ações
+nativas do sistema, filtragem e adição de novos jogos.
 
 ---
 ## Aprendizados e Desafios
@@ -46,6 +47,7 @@ nativas do sistema.
 - Troca de dados usando putExtra e Serializable
 - Diferença entre Intent.ACTION_VIEW e ACTION_SENDTO
 - Adição de nova Activity no Manifest sem causar crash
+- uso de recyclerview
 ## Instalação
 <pre>
 git clone https://github.com/ViniStahlberg/ViniGames.git
