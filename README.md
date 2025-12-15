@@ -4,11 +4,13 @@
 ---
 
 ## Descrição
-O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários títulos e clicar em cada um pra abrir os detalhes.
+O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários títulos e clicar em cada um pra abrir os detalhes, adicionar novos jogos e filtrar pelos jogos.
 ### Funcionalidades
 - Listagem de jogos com imagem
 - Tela de detalhes com Intents explícitas
 - botões para ir direto para a steam ou wikipedia
+- filtro para os jogos
+- adicionar novos jogos
 ## Capturas de Tela
 <div align="center">
   <img src="app/imagens/foto1.png" width="300" style="border-radius:20px; margin:10px;">
