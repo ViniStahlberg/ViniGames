@@ -13,13 +13,13 @@ O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários tít
 - adicionar novos jogos
 ## Capturas de Tela
 <div align="center">
-  <img src="app/imagens/foto1.png" width="300" style="border-radius:20px; margin:10px;">
-  <img src="app/imagens/foto2.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto1.2.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto2.2.png" width="300" style="border-radius:20px; margin:10px;">
 </div>
 <br><br>
 <div align="center">
-  <img src="app/imagens/foto3.png" width="300" style="border-radius:20px; margin:10px;">
-  <img src="app/imagens/foto4.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto3.2.png" width="300" style="border-radius:20px; margin:10px;">
+  <img src="app/imagens/foto4.2.png" width="300" style="border-radius:20px; margin:10px;">
 </div>
 <br>
 
