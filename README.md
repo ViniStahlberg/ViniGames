@@ -25,7 +25,7 @@ O ViniGames é um catálogo de jogos onde dá pra ver uma lista com vários tít
 
 ---
 ## Demonstração
-- [Assista no Youtube]([https://youtube.com/shorts/9E3qiy-PxCE?feature=share](https://youtube.com/shorts/bpw_od8d9QY?feature=share)
+- [Assista no Youtube]([https://youtube.com/shorts/9E3qiy-PxCE?feature=share]https://youtube.com/shorts/bpw_od8d9QY?feature=share)
 - [Vídeo demonstrativo de todas as funcionalidades]([https://youtube.com/shorts/SKwsjQP5v9g])
 
 ---
