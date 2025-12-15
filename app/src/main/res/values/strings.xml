@@ -29,6 +29,7 @@
 
     <string name="change_theme">Mudar Tema</string>
     <string name="change_language">Mudar Idioma</string>
+    <string name="add_game">Adicionar Jogo</string>
     <string name="theme_dark">Tema Escuro</string>
     <string name="theme_light">Tema Claro</string>
     <string name="language_portuguese">Português</string>
@@ -37,4 +38,33 @@
     <string name="genre_tactical_shooter_en">Tiro Tático</string>
     <string name="genre_strategic_shooter_en">Tiro Estratégico</string>
     <string name="genre_sports_en">Esporte</string>
+
+    <string name="add_new">Adicionar Novo</string>
+    <string name="add_new_game">Adicionar Novo Jogo</string>
+    <string name="enter_name">Digite o nome</string>
+    <string name="enter_developer">Digite a desenvolvedora</string>
+    <string name="enter_genre">Digite o gênero</string>
+    <string name="enter_description">Digite a descrição</string>
+    <string name="enter_steam_url">Digite a URL da Steam</string>
+    <string name="enter_wikipedia_url">Digite a URL da Wikipedia</string>
+    <string name="select_image">Selecione uma imagem</string>
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="steam_url">URL da Steam (opcional)</string>
+    <string name="wikipedia_url">URL da Wikipedia (opcional)</string>
+    <string name="game_added_success">Jogo adicionado com sucesso!</string>
+    <string name="error_name_required">Nome é obrigatório</string>
+    <string name="error_developer_required">Desenvolvedora é obrigatória</string>
+    <string name="error_genre_required">Gênero é obrigatório</string>
+    <string name="error_description_required">Descrição é obrigatória</string>
+    <string name="error_image_required">Selecione uma imagem</string>
+    <string name="search_hint">Buscar jogo...</string>
+    <string name="select_from_gallery">Selecionar da Galeria</string>
+    <string name="remove_image">Remover Imagem</string>
+    <string name="selected_image">Imagem selecionada</string>
+    <string name="or_select_default_image">Ou selecione uma imagem padrão:</string>
+    <string name="no_image_selected">Nenhuma imagem selecionada</string>
+    <string name="image_selected_success">Imagem selecionada com sucesso</string>
+    <string name="image_removed">Imagem removida</string>
+    <string name="no_image_or_default_selected">Selecione uma imagem da galeria ou escolha uma imagem padrão</string>
 </resources>

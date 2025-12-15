@@ -29,6 +29,7 @@
 
     <string name="change_theme">Change Theme</string>
     <string name="change_language">Change Language</string>
+    <string name="add_game">Add Game</string>
     <string name="theme_dark">Dark Theme</string>
     <string name="theme_light">Light Theme</string>
     <string name="language_portuguese">Portuguese</string>
@@ -37,4 +38,33 @@
     <string name="genre_tactical_shooter_en">Tactical Shooter</string>
     <string name="genre_strategic_shooter_en">Strategic Shooter</string>
     <string name="genre_sports_en">Sports</string>
+
+    <string name="add_new">Add New</string>
+    <string name="add_new_game">Add New Game</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_developer">Enter developer</string>
+    <string name="enter_genre">Enter genre</string>
+    <string name="enter_description">Enter description</string>
+    <string name="enter_steam_url">Enter Steam URL</string>
+    <string name="enter_wikipedia_url">Enter Wikipedia URL</string>
+    <string name="select_image">Select an image</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="steam_url">Steam URL (optional)</string>
+    <string name="wikipedia_url">Wikipedia URL (optional)</string>
+    <string name="game_added_success">Game added successfully!</string>
+    <string name="error_name_required">Name is required</string>
+    <string name="error_developer_required">Developer is required</string>
+    <string name="error_genre_required">Genre is required</string>
+    <string name="error_description_required">Description is required</string>
+    <string name="error_image_required">Select an image</string>
+    <string name="search_hint">search game...</string>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="remove_image">Remove Image</string>
+    <string name="selected_image">Selected image</string>
+    <string name="or_select_default_image">Or select a default image:</string>
+    <string name="no_image_selected">No image selected</string>
+    <string name="image_selected_success">Image selected successfully</string>
+    <string name="image_removed">Image removed</string>
+    <string name="no_image_or_default_selected">Select an image from gallery or choose a default image</string>
 </resources>
